@@ -1,0 +1,11 @@
+version: '2'
+services:
+  db:
+    container_name: liquinode-psql
+    image: postgres:9.5.4
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=admin
+    ports:
+      - 5432:5432
